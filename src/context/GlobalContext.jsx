@@ -28,7 +28,9 @@ function GlobalContext({ children }) {
     } else {
       setTodos([]);
     }
-    setLoading(false);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
   };
 
   const completeAllTodos = () => {
