@@ -10,7 +10,7 @@ function Button({ text, variant, ...args }) {
       {...args}
       className={`disabled:bg-gray-900/50 ${
         variant ? variants[variant] : variants["default"]
-      } h-[36px] rounded-md px-3 py-2 font-medium text-sm`}
+      } h-[36px] rounded-md px-3 py-2 w-max font-medium text-sm`}
     >
       {text}
     </button>
