@@ -62,7 +62,7 @@ function TodoItem({ title, id, status }) {
         className={` bg-gray-50
         border-gray-100 rounded-md border shadow-sm w-full p-4 flex justify-between items-center`}
       >
-        <span>{title}</span>
+        <span className="text-sm">{title}</span>
         <div className="flex gap-4 items-center">
           {status !== "completed" && (
             <CustomTooltip uniqueId={id} content={"Edit Todo"}>
